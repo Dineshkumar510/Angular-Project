@@ -2,8 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path'); 
 const cors = require('cors');
-const port = 5000;
-
+const port = 3200;
 
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -33,5 +32,3 @@ app.use(cors());
 app.listen(port, ()=> {
     console.log(`Now Listening on Port ${port}`);
 })
-
-module.exports = app;
